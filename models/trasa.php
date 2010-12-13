@@ -1,10 +1,17 @@
 <?php
 class Trasa extends AppModel {
 	var $name = 'Trasa';
-        var $hasOne = array(
+        var $belongsTo = array(
             'Periodicita',
             'Cesta',
-            'Stanice',
+            'OdesilaceStanice' => array(
+                'className' => 'Stanice',
+                'foreginKey' => 'odesilaci_stanice'
+            ),
+            'StaniceUrceni' => array(
+                'className' => 'Stanice',
+                'foreginKey' => 'stanice_urceni'
+            ),
             'VlakovaSouprava' => array(
                 'className' => 'VlakovaSouprava',
                 'foreginKey' => 'id_trasa'

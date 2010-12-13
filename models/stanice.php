@@ -2,19 +2,20 @@
 class Stanice extends AppModel {
 	var $name = 'Stanice';
         var $hasMany = array(
-            'OkolniStanice' => array(
+            'Stanice' => array(
                 'className' => 'OkolniStanice',
                 'foreginKey' => 'id_stanice'
+                
                    ),
-            'OkolniStanice' => array(
+            'DalsiStanice' => array(
                 'className' => 'OkolniStanice',
                 'foreginKey'=> 'id_dalsi_stanice'
                 ),
-            'Trasa' => array(
+            'OdesilaciStanice' => array(
                 'className' => 'Trasa',
                 'foreginKey' => 'odesilaci_stanice'
                 ),
-            'Trasa' => array(
+            'StaniceUrceni' => array(
                 'className' => 'Trasa',
                 'foreginKey' => 'stanice_urceni'
             ),

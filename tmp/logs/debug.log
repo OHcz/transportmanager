@@ -41,3 +41,5 @@
 2010-12-12 17:36:13 Notice: Notice (8): Undefined property: CestyController::$displayField in [/home/komisek/web/cakeweb/cake/libs/controller/scaffold.php, line 183]
 2010-12-12 22:11:26 Notice: Notice (8): Undefined property: CestyController::$primaryKey in [/home/komisek/web/cakeweb/cake/libs/controller/scaffold.php, line 182]
 2010-12-12 22:11:26 Notice: Notice (8): Undefined property: CestyController::$displayField in [/home/komisek/web/cakeweb/cake/libs/controller/scaffold.php, line 183]
+2010-12-13 01:21:25 Notice: Notice (8): Undefined property: CestyController::$primaryKey in [/home/komisek/web/cakeweb/cake/libs/controller/scaffold.php, line 182]
+2010-12-13 01:21:25 Notice: Notice (8): Undefined property: CestyController::$displayField in [/home/komisek/web/cakeweb/cake/libs/controller/scaffold.php, line 183]
