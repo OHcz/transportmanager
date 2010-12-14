@@ -4,11 +4,11 @@ class OkolniStanice extends AppModel {
         var $belongsTo = array(
             'Stanice' => array(
                 'className' => 'Stanice',
-                'foreginKey' => 'id_stanice'
+                'foreginKey' => 'id'
             ),
             'DalsiStanice' => array(
                 'className' => 'Stanice',
-                'foreginKey' => 'id_dalsi_stanice'
+                'foreginKey' => 'id'
             )
             );
 }

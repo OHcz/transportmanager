@@ -2,15 +2,21 @@
 class Trasa extends AppModel {
 	var $name = 'Trasa';
         var $belongsTo = array(
-            'Periodicita',
-            'Cesta',
+            'Periodicita' => array(
+                'className' => 'Periodicita',
+                'foreginKey' => 'id'
+            ),
+            'Cesta' => array(
+                'className' => 'Cesta',
+                'foreginKey' => 'id'
+            ),
             'OdesilaceStanice' => array(
                 'className' => 'Stanice',
-                'foreginKey' => 'odesilaci_stanice'
+                'foreginKey' => 'id'
             ),
             'StaniceUrceni' => array(
                 'className' => 'Stanice',
-                'foreginKey' => 'stanice_urceni'
+                'foreginKey' => 'id'
             ),
             'VlakovaSouprava' => array(
                 'className' => 'VlakovaSouprava',

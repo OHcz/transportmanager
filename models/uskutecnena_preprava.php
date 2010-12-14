@@ -20,10 +20,19 @@ class UskutecnenaPreprava extends AppModel {
 			'insertQuery' => ''
 		)
 	);
-        var $hasOne = array(
-            'HnaciVozidlo',
-            'Zamestnanec',
-            'Cesta'
+        var $belongsTo = array(
+            'HnaciVozidlo' => array(
+                'className' => 'HnaciVozidlo',
+                'foreginKey' => 'id'
+            ),
+            'Zamestnanec' => array(
+                'className' => 'Zamestnanec',
+                'foreginKey' => 'id'
+            ),
+            'Cesta' => array(
+                'className' => 'Cesta',
+                'foreginKey' => 'id'
+            )
         );
 
 }

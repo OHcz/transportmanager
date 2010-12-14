@@ -1,6 +1,11 @@
 <?php
 class Role extends AppModel {
 	var $name = 'Role';
-        var $hasMany= 'Zamestnanec';
+        var $hasMany= array(
+            'Zamestnanec' => array(
+                'className' => 'Zamestnanec',
+                'foreginKey' => 'id_role'
+            )
+        );
 }
 ?>

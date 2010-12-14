@@ -35,7 +35,12 @@ class NakaldniVuz extends AppModel {
 			'insertQuery' => ''
 		)
 	);
-        var $hasOne = 'VozovaRada';
+        var $belongTo = array(
+            'VozovaRada' => array(
+                'className' => 'VozovaRada',
+                'foreginKey' => 'id'
+            )
+            );
 
 }
 ?>

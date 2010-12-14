@@ -22,9 +22,18 @@ class VlakovaSouprava extends AppModel {
 	);
 
         var $hasOne = array(
-            'HnaciVozidlo',
-            'Trasa',
-            'Zamestnanec'
+            'HnaciVozidlo' => array(
+                'className' => 'HnaciVozidlo',
+                'foreginKey' => 'id'
+            ),
+            'Trasa' => array(
+                'className' => 'Trasa',
+                'foreginKey' => 'id'
+            ),
+            'Zamestnanec' => array(
+                'classname' => 'Zamestnanec',
+                'foreginKey' => 'id'
+            )
             );
 
 }

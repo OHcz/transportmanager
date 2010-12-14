@@ -7,7 +7,9 @@ class Zamestnanec extends AppModel {
               'className' => 'UskutecnenaPreprava',
               'foreginKey' => 'id_strojvedouci'
             ),
-          'VlakovaSouprava' => array(
+        );
+        var $hasOne = array(
+           'VlakovaSouprava' => array(
               'className' => 'VlakovaSouprava',
               'foreginKey' => 'id_strojvedouci'
           )
