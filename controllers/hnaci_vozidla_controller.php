@@ -2,5 +2,6 @@
 class HnaciVozidlaController {
        var $name = 'HnaciVozidlaController';
        var $model = 'Hnacivozidlo';
+       var $scaffold;
 }
 ?>
